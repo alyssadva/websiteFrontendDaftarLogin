@@ -1,0 +1,310 @@
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f5f5f5;
+}
+
+/* ===== HOME PAGE ===== */
+
+.container{
+display:flex;
+height:100vh;
+}
+
+.left{
+width:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#dfe9ee;
+}
+
+.left img{
+width:600px;
+margin-left:40px;
+}
+
+.right{
+width:50%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.right h1{
+font-size:45px;
+margin-bottom:2px;
+}
+
+.right p{
+font-size:25px;
+margin-bottom:30px;
+}
+
+button{
+width:220px;
+padding:14px;
+margin:10px;
+border:none;
+border-radius:30px;
+background:#79aebe;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#5fa3b4;
+}
+
+/* ===== REGISTER PAGE ===== */
+
+#registerPage{
+display:none;
+height:100vh;
+position:relative;
+flex-direction:column;
+align-items:center;
+}
+
+.back-btn{
+position:absolute;
+top:10px;
+left:10px;
+
+width:45px;
+height:45px;
+
+border:none;
+border-radius:50%;
+
+background:#79aebe;
+color:white;
+font-size:22px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+cursor:pointer;
+}
+
+.popup-box{
+position:relative;
+}
+
+.register-title{
+font-size:40px;
+margin-top:60px;
+margin-bottom:30px;
+text-align:center;
+}
+
+.form-wrapper{
+width:500px;
+}
+
+.form-wrapper input{
+width:100%;
+padding:14px;
+margin:12px 0;
+border:1px solid #888;
+border-radius:4px;
+font-size:16px;
+}
+
+.register-btn{
+display:block;
+margin:30px auto;
+width:200px;
+padding:14px;
+border-radius:25px;
+background:#79aebe;
+border:none;
+cursor:pointer;
+}
+
+.register-btn:hover{
+background:#5fa3b4;
+}
+
+/* bubu tidur */
+
+.sleep-bubu{
+position:absolute;
+bottom:30px;
+left:50px;
+width:140px;
+}
+
+/* ===== POPUP ===== */
+
+.popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.4);
+
+justify-content:center;
+align-items:center;
+}
+
+.popup-box{
+background:white;
+padding:40px;
+border-radius:10px;
+width:700px;
+position:relative;
+}
+
+.popup-content{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.popup-text{
+width:50%;
+text-align:center;
+}
+
+.popup-text h2{
+font-weight:normal;
+margin-bottom:20px;
+}
+
+.popup-text button{
+width:150px;
+padding:12px;
+border:none;
+border-radius:25px;
+background:#79aebe;
+cursor:pointer;
+}
+
+.popup-text button:hover{
+background:#5fa3b4;
+}
+
+.popup-image img{
+width:250px;
+}
+
+/* ===== LOGIN PAGE ===== */
+
+#loginPage{
+display:none;
+height:100vh;
+background:#c5945a;
+
+flex-direction:column;
+justify-content:center;
+align-items:center;
+position:relative;
+}
+
+/* Judul Login */
+#loginPage h1{
+text-align:center;
+margin-bottom:30px;
+font-size:40px;
+}
+
+/* Kotak Form */
+#loginPage .form-wrapper{
+background:#eaeaea;
+padding:60px 80px;
+border-radius:5px;
+display:flex;
+flex-direction:column;
+gap:20px;
+align-items:center;
+}
+
+/* Input Username dan Password */
+#loginPage input{
+width:350px;
+padding:12px;
+border-radius:10px;
+border:1px solid #999;
+font-size:16px;
+}
+
+/* Tombol Login */
+#loginPage .register-btn{
+background:#6fa7b4;
+border:none;
+padding:12px 40px;
+border-radius:25px;
+font-size:16px;
+cursor:pointer;
+}
+
+/* Tulisan Register */
+#loginPage p{
+margin-top:10px;
+color:#6fa7b4;
+cursor:pointer;
+}
+
+/* Tombol kembali */
+#loginPage .back-btn{
+position:absolute;
+top:20px;
+left:20px;
+background:#7fb2be;
+border:none;
+width:50px;
+height:50px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+}
+
+/* ===== HALAMAN SETELAH LOGIN ===== */
+
+/* ===== HALAMAN SETELAH LOGIN ===== */
+
+#afterLoginPage{
+display:none;
+height:100vh;
+background:#eaeaea;
+padding:40px;
+
+flex-direction:column;
+align-items:center;
+justify-content:flex-start;
+}
+
+/* Tulisan sambutan */
+
+.welcome-text{
+background:#79b6c6;
+padding:10px 20px;
+border-radius:10px;
+width:max-content;
+margin-top:40px;
+margin-bottom:40px;
+font-size:20px;
+}
+
+/* Galeri foto */
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:20px;
+}
+
+/* Foto */
+
+.gallery img{
+width:200px;
+height:250px;
+object-fit:cover;
+border:3px solid #333;
+}

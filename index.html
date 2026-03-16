@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dunia Bubu</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ===== HOME PAGE ===== -->
+
+<div id="homePage" class="container">
+
+<div class="left">
+<img src="bubududu.png">
+</div>
+
+<div class="right">
+
+<h1>HAI !</h1>
+<p>selamat datang di dunia bubu</p>
+
+<button onclick="showLogin()">LOGIN</button>
+<button onclick="showRegister()">DAFTAR</button>
+
+</div>
+
+</div>
+
+
+<!-- ===== REGISTER PAGE ===== -->
+
+<div id="registerPage">
+
+<button class="back-btn" onclick="backHome()">←</button>
+
+<h1 class="register-title">Register Form</h1>
+
+<form id="registerForm">
+
+<div class="form-wrapper">
+
+<input type="text" name="namaDepan" placeholder="Nama depan" required>
+
+<input type="text" name="namaBelakang" placeholder="Nama Belakang" required>
+
+<input type="email" name="email" placeholder="Email" required>
+
+<input type="text" name="TTL" placeholder="Tempat Tanggal Lahir" required>
+
+<input type="text" name="username" placeholder="Username" required>
+
+<input type="password" name="password" placeholder="Password" required>
+
+<button class="register-btn" type="submit">Register</button>
+
+</div>
+
+</form>
+
+<img class="sleep-bubu" src="bubutidur.jpg">
+
+</div>
+
+<!-- ===== LOGIN PAGE ===== -->
+
+<div id="loginPage">
+
+<button class="back-btn" onclick="backHome()">←</button>
+
+<h1>Login Form</h1>
+
+<div class="form-wrapper">
+
+<input type="text" id="loginUsername" placeholder="Username">
+
+<input type="password" id="loginPassword" placeholder="Password">
+
+<button class="register-btn" onclick="loginUser()">LOGIN</button>
+
+<p onclick="showRegister()">REGISTER</p>
+
+</div>
+
+</div>
+
+<!-- ===== POPUP REGISTER ===== -->
+
+<div id="popupRegister" class="popup">
+
+<div class="popup-box">
+
+<button class="back-btn" onclick="backHome()">←</button>
+
+<div class="popup-content">
+
+<div class="popup-text">
+<h2>REGISTER SUDAH DITERIMA, AYO<br>KLIK LOGIN DUDU!!!!!!</h2>
+<button onclick="goToLogin()">Login</button>
+</div>
+
+<div class="popup-image">
+<img src="bubupopup.jpg">
+</div>
+
+</div>
+
+</div>
+
+</div>
+<!-- ===== HALAMAN SETELAH LOGIN ===== -->
+
+<div id="afterLoginPage" style="display:none;">
+
+<button class="back-btn" onclick="backHome()">←</button>
+
+<div class="welcome-text">
+Hai ayang, yeay udah login dapat 1.500
+</div>
+
+<div class="gallery">
+
+<img src="bubududu1.jpg">
+<img src="bubududu2.webp">
+<img src="bubududu3.jpg">
+<img src="bubududu4.webp">
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
